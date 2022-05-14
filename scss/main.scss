@@ -39,3 +39,63 @@ header {
 }
 
 // nav content ends here
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+// tell all items in wrapper to take up 100% width
+
+.wrapper > * {
+	width: 100%;
+}
+
+.main {
+	background-color: lightgray;
+	text-align: justify;
+	padding: 1em;
+}
+
+.aside-1 {
+	background-color: lightblue;
+	padding: 1em;
+}
+
+.aside-2 {
+	background-color: lightsalmon;
+	padding: 1em;
+}
+
+.footer {
+	background-color: lightcoral;
+	padding: 1em;
+}
+
+// tell both asides to share a row
+// so, from 100%, to 1 each
+
+@media all and (min-width: 600px) {
+	.aside {
+		flex: 1;
+	}
+}
+
+// reset order of items
+
+@media all and (min-width: 800px) {
+	.main {
+		flex: 3;
+		order: 2;
+	}
+	.aside-1 {
+		order: 1;
+	}
+	.aside-2 {
+		order: 3;
+	}
+	.footer {
+		order: 5;
+	}
+}
