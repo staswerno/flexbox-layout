@@ -1,5 +1,41 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	height: 0;
+	padding: 0;
 }
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+}
+
+// nav content starts here
+
+header {
+	background-color: lightcoral;
+}
+
+.navlink {
+	padding: 1em;
+}
+
+.navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+
+@media all and (max-width: 800px) {
+	.navigation {
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.navigation {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+// nav content ends here
