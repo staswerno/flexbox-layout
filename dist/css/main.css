@@ -49,3 +49,39 @@ header {
             align-items: center;
   }
 }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  width: 100%;
+}
+
+.main {
+  background-color: lightgray;
+  text-align: justify;
+  padding: 1em;
+}
+
+.aside-1 {
+  background-color: lightblue;
+  padding: 1em;
+}
+
+.aside-2 {
+  background-color: lightsalmon;
+  padding: 1em;
+}
+
+.footer {
+  background-color: lightcoral;
+  padding: 1em;
+}
